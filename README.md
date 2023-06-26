@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+// card hover
+/* 
+  // function handleMouseMove(event) {
+  //   const card = cardRef.current;
+  //   const { offsetWidth: width, offsetHeight: height } = card;
+  //   const { clientX, clientY } = event;
+  //   const x = clientX - card.offsetLeft - width / 2;
+  //   const y = clientY - card.offsetTop - height / 2;
+  //   var mult = 40;
+  //   setXRotation((y / height) * mult);
+  //   setYRotation((x / width) * mult);
+  // }
+  // function handleMouseEnter() {
+  //   const img = imgRef.current;
+  //   const title = titleRef.current;
+  //   const sizesBox = sizesboxRef.current;
+  //   const purchase = purchaseRef.current;
+  //   const desc = descRef.current
+  //   title.style.transform = "translateZ(150px)";
+  //   img.style.transform = "translateZ(100px) rotateZ(-45deg)";
+  //   sizesBox.style.transform = "translateZ(100px)";
+  //   purchase.style.transform = "translateZ(75px)";
+  //   desc.style.transform = "translateZ(75px)";
+  // }
+  // function handleMouseLeave() {
+  //   setXRotation(0);
+  //   setYRotation(0);
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  //   const img = imgRef.current;
+  //   const title = titleRef.current;
+  //   const sizesBox = sizesboxRef.current;
+  //   const purchase = purchaseRef.current;
+  //   title.style.transform = "translateZ(0px)";
+  //   img.style.transform = "translateZ(0px) rotateZ(0deg)";
+  //   sizesBox.style.transform = "translateZ(0px)";
+  //   purchase.style.transform = "translateZ(0px)";
+  // }
+*/
+// card-style
+/* 
+ // style={{
+        //   transform: `rotateX(${xRotation}deg) rotateY(${yRotation}deg)`,
+        // }}
+        // onMouseMove={handleMouseMove}
+        // onMouseEnter={handleMouseEnter}
+        // onMouseLeave={handleMouseLeave}
+*/
+// search 
+/* 
+   {/* <form className="d-flex my-2 my-lg-0">
+          <input
+            className="form-control me-sm-2"
+            type="text"
+            placeholder="Search"
+          /> */}
+          {/* <button
+            className="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+          >
+            Search
+          </button> */}
+*/
 
-## Available Scripts
+/*
+ <div className="card-footer">
+                  <button type="button" className="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal" onClick={() => {
+                    setId(item.id);
+                  }}>
+                    View Detail
+                  </button>
+                  <button type="button" className=" text-dark fw-bold btn btn-secondary btn-sm mx-2 p-2">
+                    Add to cart <i class="fas fa-cart-shopping" style={{ color: "black" }}></i>
+                  </button>
+                  <div>
+                    <div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div className="modal-dialog">
+                        <div className="modal-content">
+                          <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" className="btn-close" data-mdb-dismiss="modal" aria-label="Close" />
+                          </div>
+                          <div className="modal-body">
+                            <Card item={item}></Card>
+                          </div>
+                          <div className="modal-footer">
+                            <button type="button" className="btn btn-primary" data-mdb-dismiss="modal">Close</button>
 
-In the project directory, you can run:
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+*/
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+/* 
+   <div
+      className={cardShoes.card}
+      ref={cardRef}
+      style={
+        { width: "100%" }
+      }
+    >
+      <img
+      src={item.image}
+      style={
+        { width: "50%" }
+      }
+        ref={imgRef}
+        alt="Nike-Shoe"
+        className="sneaaker-img"
+      />
+      <h1 className={cardShoes.title} ref={titleRef}>
+       {item.name}
+      </h1>
+      <p ref={descRef}>
+       {item.description}
+      </p>
+      <ul className={cardShoes.sizesBox} ref={sizesboxRef}>
+        <li>38</li>
+        <li>40</li>
+        <li>42</li>
+        <li>44</li>
+      </ul>
+      <div className={cardShoes.buttonBox} ref={purchaseRef}>
+        <button className={cardShoes.purchase} >
+          Purchase
+        </button>
+      </div>
+    </div>
+*/
